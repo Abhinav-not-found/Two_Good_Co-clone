@@ -103,4 +103,28 @@ box-sizing:border-box;
             transform: translate(-50%, -50%);
         }
     }
+    #page2{
+        min-height: 100vh;
+        width: 100%;
+        background-color: aliceblue;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 3vw 1vw;
+        & .elem{
+            height: 100vh;
+            width: 31%;
+            background-color: red;
+            overflow: hidden;
+            & img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;  
+                scale: 1;
+            }
+        }
+    }
+    
 }
