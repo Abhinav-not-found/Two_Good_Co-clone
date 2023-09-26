@@ -73,8 +73,6 @@ function loadinganimation(){
     })
 }
 loadinganimation()
-
-
 function cursorAnimation() {
     document.addEventListener("mousemove", function (dets) {
       gsap.to("#cursor", {
@@ -105,9 +103,6 @@ function cursorAnimation() {
     });
   }
   cursorAnimation();
-
-
-
 function navbarAnimation(){
 
   gsap.to(".nav-part1 svg",{
@@ -134,4 +129,4 @@ function navbarAnimation(){
     }
   })
 }
-navbarAnimationOptions()
+navbarAnimation()

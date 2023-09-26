@@ -194,6 +194,64 @@ body {
     #main{
         padding: 0 10px;
     }
+    #nav{
+        /* height: 100px; */
+        width: 100%;
+        /* background-color: burlywood; */
+        position: fixed;
+        z-index: 99;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        & #twogoodlogo{
+            height: 40px;
+            margin-left: -20px;
+        }
+        & .nav-part1{
+            /* background-color: red; */
+            height: 67px;
+            overflow: hidden;
+            & svg{
+                height: 63px;
+                display: block;
+                width: 80px;
+            }
+           
+        }
+        & .nav-part2{
+            display: flex;
+            gap: 5em;
+            & .links{
+                display: none;
+                gap: 6em;
+                font-size: 15px;
+                text-transform: uppercase;
+                
+                & a {
+                    text-decoration: none;
+                    color: black;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                & .icons {
+                    font-size: 15px;
+                    margin-top: -10px;
+                    padding: 10px;
+                    border-radius: 50px;
+                    display:flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    background-color: #f7f7f7;
+                    & i{
+                        margin: 0 20px;
+                    }
+                    & .ri-menu-line{
+                    margin-right: 80px;
+                    }
+                }
+            }
+        }
+    }
     #page1 {
         padding: 0 3vw;
         padding-top: 20vh;
@@ -241,6 +299,30 @@ body {
                 width: 100%;
                 object-fit: cover;  
                 scale: 1;
+            }
+        }
+    }
+    #page3{
+        min-height: 120vh;
+        width: 100%;
+        background-color: aliceblue;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        & .child{
+            height: 55vh;
+            width: 88vw;
+            padding: 15vw;
+            /* background-color: red;
+            border: 2px solid black; */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img{
+                height: 100%;
             }
         }
     }
